@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações e Códigos</title>
+</head>
+<body>
+    <h1>Formatações diferentes</h1>
+
+    <h2>Código-Fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript, e para o texto ficar estilo código usa-se a tag code.</p>
+
+    <pre>
+        <code>
+int main() 
+{
+    int A, B;
+    A = 1020;
+    B = 20;
+    A = A + B;
+    printf("%d, resultado da soma", &A);
+
+    return 0;
+}
+        </code>
+    </pre>
+
+    <p>Para que fique parecendo com um código de verdade com identação, precisamos colocar dentro da tag code, e após isso envelopar denovo com a tag pre.</p>
+
+    <h2>Citações</h2>
+
+    <p>Como diria meu parceiro ShotaNakara, <q>o computador é um burro rapido</q>. Para fazer a citação coloca a tag q.</p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo Willian Harrel, no seu livro HTML para leigos:(citação feita com a tag blockquote e o cite como parametro dentro da tag usando o link do livro, serve para aparecer na pesquisa do google.)</p>
+    <blockquote cite="https://www.google.com.br/books/edition/_/f5_qAWoWTHEC?hl=pt-BR&gbpv=0">
+        With that said, let me step way out on a limb here. There are two type of mobile internet users.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascado Style Sheets">CSS</abbr> e estou gostando. Usa se a tag abbr para que quando passar o mouse aparecer o significado da Sigla.</p>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Shippori-mincho';
+    src: url('./fonts/Shippori_Mincho/ShipporiMincho-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garish Monde';
+    src: url('./fonts/garish-monde/Garish-Monde/GARIM___.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #C3E5E2;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #023059, #03658C, #0388A6);
+    padding: 16px;
+    border-radius: 10px;
+    width: auto;
+    }
+
+header > p {
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Shippori-mincho', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #C3E5E2;
+}
+
+h1#title {
+    font-family: 'Garish Monde';
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+    color: #C3E5E2;
+}
+
+
+.menu > ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #03658C;
+    color: #C3E5E2;
+    padding: 10px 20px;
+
+}
+
+.menu a:hover {
+    background-color: #0388A6;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.characters_list dt, dd {
+    margin: 0;
+    padding: 0;
+} 
+
+main p, .characters_list {
+    text-align: justify;
+    font-family: 'Shippori-mincho', Arial, Helvetica, sans-serif;
+    color: #01203b;
+}
+
+main h2 {
+    background-color: #C3E5E2;
+    color: #03658C;
+    padding: 3px;
+    border-radius: 3px;
+    font-family: 'Garish Monde', Arial, Helvetica, sans-serif;
+}
+
+.Images {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+}
+
+footer {
+    background-color: #01203b;
+    color: #C3E5E2;
+    border-radius: 5px;
+    padding: 0 0 1em 0;
+}
+
+footer a {
+    color: #C3E5E2;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    background-color: #0388A6;
+    display: block;
+    border-radius: 5px;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 2px;
+}

@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Teste esse site em dispositivos diferentes e veja a diferença no tamanho da imagem.</p>
+
+    <p>Para ter imagens de tamanhos diferentes de acordo com a tela, use a tag picture envelopando as tags img e a tag source media type, no parametro src coloque a maior imagem, ACIMA NO CODIGO da tag img adicione a source e no media troque de min para max, e coloque o tamanho da imagem + 50px que voce quer trocar ao diminuir o tamanho da aba.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="./imagens/grande.png" alt="imagem Flexível">
+    </picture>
+
+    <h1>Áudio no seu site</h1>
+
+    <p>Use a tag audio, dentro dela coloque a source:src e escolha o caminho e depois especifique o formato. A tag audio vai tentar todas as fontes que você colocar em ordem de acordo com o código, no exemplo abaixo ele tenta o mp3, se nao for ele mostra o texto com opção pra download.</p>
+
+    <!--Formatos de áudio MP3(Mpeg) WAV(evite pois é pesado) OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="./áudio/Carol Biazin - Dilemas da vida moderna (YouTube Music Nights).mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio, clique <a href="./áudio/Carol Biazin - Dilemas da vida moderna (YouTube Music Nights).mp3">aqui</a> para baixar o arquivo.</p>
+
+    </audio>
+
+    <!--MP4 m4v WEBM OGV-->
+    <!--Programa HandBrake, serve para converter vídeos com facilidade e qualidade-->
+    <h1>Colocar vídeos no site de forma eficiente</h1>
+
+    <h2>Hospedando diretamente do site</h2>
+    <p>Este vídeo está hospedado diretamente do site, e para você usar é praticamente igual ao audio trocando a tag por video, no entanto tem alguns parametros uteis como width para o tamanho e o poster para a capa do video e claro o controls para começar o video.</p>
+
+    <video width="500" poster="./imagens/thumbVIDEO.png" controls>
+        <source src="./Videos/i love you so the walters (cover).mp4" type="video/mp4">
+        <source src="./Videos/I Love You So The Walters (Cover).webm" type="video/webm">
+        <source src="./Videos/i-love-you-so-the-walters-_cover_.ogv" type="video/ogv">
+        <p>O vídeo não carregou em seu navegador, tente em outro.</p>
+    </video>
+
+    <h2>Colocando vídeos de uma fonte externa</h2>
+
+    <h3>inserindo vídeos do Youtube</h3>
+    <p>Vá até o vídeo diretamente no youtube, clique em compartilhar e escoolha a opção incorporar que vai gerar o código pronto para adicionar no codigo e editar caso queira.</p>
+    
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/cQOZinliPzo?si=mMpbziQIOVLxPDGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+    
+    <h3>Inserindo Vídeos a partir do vimeo</h3>
+    <p>É uma opção alternativa para o Youtube com mais qualidade, no entanto para upar vídeo é necessário pagar, e é mais seguro caso não queira que o vídeo seja público para outros.</p>
+
+    <iframe src="https://player.vimeo.com/video/211318342?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="cat learns french no headings"></iframe>    
+
+</body>
+</html>

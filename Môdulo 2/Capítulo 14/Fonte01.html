@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            /*lighter normal bold bolder ou numérico de 100 a 900
+            nem toda fonte tem todas as variações*/
+            /*nem toda fonte tem o style junto do weight*/
+            font-weight: lighter;
+            font-style: normal;
+        }
+        h1, h2 {
+            font: normal bold 3em 'Times New Roman', Times, Serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Fontes</h1>
+    <p>ShortHand é um tipo de cabeçalho pra otimizar e não precisar ficar colocando todas as configurações da fonte em várias linhas. a ordem é essa para a ShortHand font: font-style font-weight font-size font-family. <br> Existem vários tipos de ShortHand em CSS, mas é sempre necessário lembrar a ordem de parâmetros de cada.
+    </p>
+    <p>exemplo: font: italic lighter 2em Arial, Helvetica, sans-serif;</p>
+
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, libero iure, delectus vero, harum dicta quibusdam eum consectetur quasi modi dolores veritatis perferendis dolore exercitationem provident eveniet aspernatur placeat corrupti.</p>
+</body>
+</html>
+
+        /* 
+        Medidas absolutas: cm, mm, in, px, pt, pc. Podem causar diferença em telas diferentes.
+        Medidas Relativas: 
+        em, ex, rem, vw, vh, %.
+        16px = 1em
+        */

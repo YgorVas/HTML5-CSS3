@@ -1,0 +1,31 @@
+@charset "UFT-8";
+
+* {
+    font-family: fantasy;
+}
+
+body {
+    background-image: linear-gradient(to right, #D4CDF4, #BCC4DB, #fef8e97c);
+}
+
+main {
+    background-color: white;
+    border-radius: 5px;
+    width: 700px;
+    padding: 15px;
+    margin: auto;
+    box-shadow:3px 3px 7px #48284A;
+}
+
+h1 {
+    color: #48284A;
+    text-shadow:1px 1px 2px #854a89;
+}
+
+h2 {
+    color: #5F7470;
+}
+
+p {
+    text-align: justify;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes EXternas</title>
+    <style>
+        @font-face {
+            font-family: Typewriter;
+            src: url('./fonte/jmh_typewriter/JMH\ Typewriter-Black.otf') format('opentype'), url('./fonte/jmh_typewriter/JMH\ Typewriter-Black.ttf') format('truetype');
+            /*Tipos de format: opentype(otf), truetype(ttf), embedded-opentype, truetype-aat (apple), svg*/
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Typewriter', serif;
+            font-weight: normal;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Título teste</h1>
+    <p>Para usar fontes externas. é necessário você ter a fonte e adicionar um cabeçalho @font-face</p>
+</body>
+</html>
