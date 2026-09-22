@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+
+    <style>
+        iframe#tela {
+            border: 1px solid black;
+            width: 50vw;
+            height: 60vh;
+            display: flex;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Testando iframe para páginas locais</h1>
+
+    <p>Páginas disponíveis para explorar</p>
+    <ul>
+        <li><a href="../Modulo3/Capitulo20/index_cinema.html" target="window">Primeira Página</a></li>
+        <li><a href="../Modulo2/Capitulo17/IndexSITE.html" target="window">Segunda Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab earum similique nesciunt? Nam ut eius quas delectus veritatis quam? Aliquam quibusdam excepturi tenetur dolor cupiditate sit eos sapiente pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum quisquam, aliquid ratione dicta molestias natus et laborum delectus accusamus doloremque autem totam in neque! Animi adipisci quidem velit beatae.</p>
+
+    <iframe id="tela" name="window" src="" frameborder="0"> <!--no lugar do src (que você pode colocar um site inicial para nao começar em branco), voce pode colocar srcdoc e inserir comandos html-->
+        <p>Infelizmente seu navegador não cconsegue rodar a janela</p>
+    </iframe>
+
+</body>
+</html>
