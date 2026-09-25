@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefone e email</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="tele">Telefone</label>
+                <input type="tel" name="tell" id="tell" autocomplete="tel" pattern="" required>
+                <!--Estudar sobre RegE + HTML5 telefone pattern-->
+            </div>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

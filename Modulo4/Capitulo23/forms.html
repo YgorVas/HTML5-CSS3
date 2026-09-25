@@ -18,11 +18,14 @@
     
     <form action="cadastro.php">
         <p><label for="nome">Nome:</label> 
-            <input type="text" name="nome" id="nome"></p>
+            <input type="text" name="nome" id="nome" required minlength="3"></p>
+
         <p><label for="sobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="sobrenome"></p>
+            <input type="text" name="sobrenome" id="sobrenome" required minlength="8"></p>
+
         <p><Input type="submit" value="enviar"></Input></p>
+
     </form>
     
 </body>
-</html>
+</html> 

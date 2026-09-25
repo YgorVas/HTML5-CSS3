@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox e RadioButton</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+
+            <input type="radio" name="sexo" id="masc">
+            <label for="masc">Masculino</label>
+
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <!--Para conseguir trocar entre as bolinhas do radio, todos tem que ter o mesmo name, o id tem de ser diferente para identificar-->
+            <input type="checkbox" name="basq" id="basq">
+            <label for="basq">Basquete</label> <br>
+
+            <input type="checkbox" name="fut" id="fut">
+            <label for="fut">Futebol</label> <br>
+
+            <input type="checkbox" name="volei" id="volei">
+            <label for="volei">Vôlei</label> <br>
+
+            <input type="checkbox" name="nat" id="nat">
+            <label for="nat">Natação</label> <br>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
