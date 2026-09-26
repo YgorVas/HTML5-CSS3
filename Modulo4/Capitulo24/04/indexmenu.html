@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Site</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+
+</head>
+<body onresize="changed_size()">
+    <header>
+        <h1>Site Menu Responsivo</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickmenu ()">menu</i>
+        <menu id="itens_menu">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Conteúdo fictício</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt earum reprehenderit saepe labore nam cumque veritatis sequi? Error eum rerum quia labore animi quas accusamus esse asperiores fuga amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla nobis accusamus ea iste. Neque sed ipsam, sint voluptatibus fuga voluptate, nostrum ipsum illum nulla error tenetur nisi hic laudantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa libero excepturi, ut reiciendis, qui facilis neque alias cum, labore asperiores eaque error? Optio eum, quam asperiores qui tenetur molestias voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi debitis reiciendis nihil vero impedit laboriosam fugiat beatae saepe, nulla ab blanditiis corporis corrupti ducimus! Asperiores, commodi. Sint, veritatis laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut maiores facere? Non quae voluptatum porro temporibus labore, quo nemo repudiandae eum dignissimos nam itaque sed cupiditate veniam voluptatem libero!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, nisi? Amet vero expedita inventore dolorem. Ipsam quae placeat, aperiam saepe dignissimos harum dolore temporibus sapiente, natus ullam laborum perspiciatis dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias unde id voluptas sint, minus ab saepe quidem soluta veritatis magni, praesentium, culpa beatae sit quis doloribus blanditiis mollitia nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium eum ut aliquam. Aspernatur excepturi reiciendis quam id obcaecati quibusdam? Eligendi odit sapiente, pariatur reprehenderit porro voluptatem inventore quod sequi!</p>
+        </article>
+    </main>
+
+    <script>
+
+        function changed_size () {
+            if(window.innerWidth >= 768) {
+                itens_menu.style.display = 'block'
+            } else {
+                itens_menu.style.display = 'none'
+            }
+        }
+
+        function clickmenu () {
+            if (itens_menu.style.display == 'block') {
+                itens_menu.style.display = 'none'
+            } else {
+                itens_menu.style.display = 'block'
+            }
+        }
+    </script>
+
+</body>
+</html>
