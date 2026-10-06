@@ -6,29 +6,36 @@
     <title>Projeto Login</title>
 
     <link rel="stylesheet" href="styles/style.css">
-
+    <link rel="stylesheet" href="styles/media_query.css">
 
 </head>
 <body>
     <main>
         <section id="login">
-            <div>
-                foto
+
+            <div id="imagem">
+                <!--Imagem CSS-->
             </div>
 
             <div id="formulario">
-                <h1>Login</h1>
+                <h1>Login</h1> 
                 <p>Seja bem-vindo(a) novamente. Faça seu login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
+
                 <form action="login.php" method="post" autocomplete="on">
-                    <label for="user">User: </label>
-                    <input type="text" name="user" id="user" required>
-                    <br>
-                    <label for="password">Senha: </label>
-                    <input type="password" name="password" id="password" required minlength="8">
-                    <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
+                    <div class="campo">
+                        <label for="login">Login</label>
+                        <input type="email" name="login" id="login" placeholder="Seu E-mail" required maxlength="60">
+                    </div>
+
+                    <div class="campo">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Sua Senha" required minlength="8">
+                    </div>
+
+                    <input type="submit" value="Entrar" class="botao">
+                    <a href="esqueci.html" class="botao">Esqueci a senha</a>
                 </form>
+
             </div>
         </section>
     </main>
